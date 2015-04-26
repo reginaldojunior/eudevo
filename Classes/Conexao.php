@@ -7,7 +7,7 @@ class conexao {
 	private $banco    = 'prototipo';
 	private $host	  = 'localhost';
 
-	private $conn     = '';
+	public $conn     = '';
 
 	function __construct () {
 		try {
@@ -55,4 +55,4 @@ class conexao {
 
 		return true;
 	}
-}
+}	
