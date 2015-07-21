@@ -4,8 +4,15 @@ require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim();
-$app->config('debug', true);
 $app->response()->header('Content-Type', 'application/json;charset=utf-8');
+
+$app->get(
+    '/',
+    function() {
+        echo 'Hello World';
+    }
+);
+
 
 // Classe de Produto
 require 'Classes/Produto.php';
