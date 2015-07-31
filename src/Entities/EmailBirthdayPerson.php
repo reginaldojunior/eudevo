@@ -6,6 +6,7 @@ namespace Entities;
  */
 class EmailBirthdayPerson 
 {  
+  
   /**
    * @Id @GeneratedValue
    * @Column(name="id", type="integer")
