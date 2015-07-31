@@ -4,7 +4,8 @@ namespace Entities;
 /**
  * @Entity @Table(name="users")
  */
-class Email_Birthday_Person {  
+class EmailBirthdayPerson 
+{  
   /**
    * @Id @GeneratedValue
    * @Column(name="id", type="integer")
@@ -28,7 +29,7 @@ class Email_Birthday_Person {
 
   public function getIdBirthdayPerson() 
   {
-    return $this->name;
+    return $this->id_birthday_person;
   }
 
   public function getEmail() 
