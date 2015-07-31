@@ -29,7 +29,7 @@ class EmailBirthdayPerson
 
   public function getIdBirthdayPerson() 
   {
-    return $this->name;
+    return $this->id_birthday_person;
   }
 
   public function getEmail() 
