@@ -74,23 +74,28 @@ class User {
   private $img;
 
 
-  public function getId() {
+  public function getId()
+  {
     return $this->id;
   }
 
-  public function getName() {
+  public function getName()
+  {
     return $this->name;
   }
 
-  public function setName($name) {
+  public function setName($name)
+  {
     $this->name = $name;
   }
 
-  public function getLastName() {
+  public function getLastName()
+  {
     return $this->last_name;
   }
 
-  public function setLastName($last_name) {
+  public function setLastName($last_name)
+  {
     $this->last_name = $last_name;
   }
 
@@ -98,39 +103,48 @@ class User {
     return $this->login;
   }
 
-  public function setLogin($login) {
+  public function setLogin($login)
+  {
     $this->login = $login;
   }
 
-  public function getPassword() {
+  public function getPassword()
+  {
     return $this->password;
   }
 
-  public function setPassword($password) {
+  public function setPassword($password)
+  {
     $this->password = $password;
   }
 
-  public function getFacebookId() {
+  public function getFacebookId()
+  {
     return $this->facebook_id;
   }
 
-  public function setFacebookId($facebook_id) {
+  public function setFacebookId($facebook_id)
+  {
     $this->facebook_id = $facebook_id;
   }
 
-  public function getDateBirth() {
+  public function getDateBirth()
+  {
     return $this->date_birth;
   }
 
-  public function setDateBirth($date_birth) {
+  public function setDateBirth($date_birth)
+  {
     $this->date_birth = $date_birth;
   }
 
-  public function getActive() {
+  public function getActive()
+  {
     return $this->active;
   }
 
-  public function setActive($active) {
+  public function setActive($active)
+  {
     $this->active = $active;
   }
 
