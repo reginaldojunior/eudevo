@@ -4,7 +4,8 @@ namespace Entities;
 /**
  * @Entity @Table(name="users")
  */
-class Birthday_Person {  
+class BirthdayPerson 
+{  
   /**
    * @Id @GeneratedValue
    * @Column(name="id", type="integer")
