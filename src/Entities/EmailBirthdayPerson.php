@@ -2,7 +2,7 @@
 namespace Entities;
 
 /**
- * @Entity @Table(name="users")
+ * @Entity @Table(name="email_birthday_person")
  */
 class EmailBirthdayPerson 
 {  
