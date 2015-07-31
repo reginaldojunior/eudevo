@@ -2,7 +2,7 @@
 /*
 
 CREATE TABLE IF NOT EXISTS `users` (
-`id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `name` varchar(60) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `login` varchar(100) NOT NULL,
@@ -86,24 +86,48 @@ class User {
     $this->name = $name;
   }
 
+  public function getLastName() {
+    return $this->last_name;
+  }
+
   public function setLastName($last_name) {
     $this->last_name = $last_name;
+  }
+
+  public function getLogin() {
+    return $this->login;
   }
 
   public function setLogin($login) {
     $this->login = $login;
   }
 
+  public function getPassword() {
+    return $this->password;
+  }
+
   public function setPassword($password) {
     $this->password = $password;
+  }
+
+  public function getFacebookId() {
+    return $this->facebook_id;
   }
 
   public function setFacebookId($facebook_id) {
     $this->facebook_id = $facebook_id;
   }
 
+  public function getDateBirth() {
+    return $this->date_birth;
+  }
+
   public function setDateBirth($date_birth) {
     $this->date_birth = $date_birth;
+  }
+
+  public function getActive() {
+    return $this->active;
   }
 
   public function setActive($active) {
