@@ -2,6 +2,9 @@
 $entityManager  = require __DIR__ . "/bootstrap.php";
 $app = new \Slim\Slim();
 
+// DEFINI A VARIAVEL PARA TRATAR O HTTP
+$request = $app->getInstance()->request();
+
 $app->get(
     '/',
     function() {
@@ -13,9 +16,9 @@ $app->get(
     '/user', 
     function() use ($app, $entityManager) {
         $users = new Entities\User;
-        
-        $users->setName('REginaldo teste 123');
-        $result = $entityManager->persist($users);
+
+        $users->setName('Reginaldo teste 123');
+        $entityManager->persist($users);
 
         $entityManager->flush();
 
@@ -31,7 +34,6 @@ $app->get("/teste", function() use ($app, $entityManager) {
   foreach($users as $user) {
     echo $user->getName();
   }
-
 });
 
 $app->run();
