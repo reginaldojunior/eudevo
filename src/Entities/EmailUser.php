@@ -3,9 +3,9 @@
 namespace Entities;
 
 /**
- * @Entity @Table(name="user_emails")
+ * @Entity @Table(name="email_user")
  */
-class UserEmail {
+class EmailUser {
   /**
    * @Id @GeneratedValue
    * @Column(name="id", type="integer")

@@ -1,7 +1,7 @@
 <?php  
 /*
 
-CREATE TABLE IF NOT EXISTS `users` (
+CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL,
   `name` varchar(60) NOT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -24,7 +24,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 namespace Entities;
 
 /**
- * @Entity @Table(name="users")
+ * @Entity @Table(name="user")
  */
 class User {  
   /**
