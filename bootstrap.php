@@ -10,12 +10,12 @@ if (!is_readable($loaderPath)) {
 }
 
 $loader = require $loaderPath;
-$loader->add("Entities", __DIR__ . "/src");
+$loader->add("Entities", __DIR__);
 
 $config = new Configuration();
 
 $driveImpl = $config->newDefaultAnnotationDriver([
-  __DIR__ . "/src/Entities"
+  __DIR__ . "/Entities"
 ]);
 $config->setMetadataDriverImpl($driveImpl);
 
